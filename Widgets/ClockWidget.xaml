@@ -1,0 +1,18 @@
+﻿<Window x:Class="WindowsWidgets.ClockWidget"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsWidgets"
+        xmlns:hw="http://schemas.hpod9.com/haley/wpf"
+        xmlns:hm="http://schemas.hpod9.com/haley/mvvm"
+        xmlns:beh="http://schemas.microsoft.com/xaml/behaviors"
+        mc:Ignorable="d"
+        Title="Clock Widget" Height="220" Width="535" WindowStyle="None" AllowsTransparency="True" Background="{DynamicResource WidgetBackground}" hm:WindowBlurAP.IsEnabled="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" ShowInTaskbar="False">
+    <Grid>
+        <local:Clock x:Name="ChicagoClock" VerticalAlignment="Top" Margin="35,37,0,0" HorizontalAlignment="Left" CityName="Chicago" TimeZoneId="Central Standard Time"/>
+        <local:Clock x:Name="NewYorkClock" VerticalAlignment="Top" Margin="160,37,0,0" HorizontalAlignment="Left" CityName="New York" TimeZoneId="Eastern Standard Time"/>
+        <local:Clock x:Name="LosAngelasClock" VerticalAlignment="Top" Margin="285,37,0,0" HorizontalAlignment="Left" CityName="Los Angelas" TimeZoneId="Pacific Standard Time"/>
+        <local:Clock x:Name="GreenwichClock" VerticalAlignment="Top" Margin="410,37,0,0" HorizontalAlignment="Left" CityName="Greenwich" TimeZoneId="Greenwich Standard Time"/>
+    </Grid>
+</Window>
